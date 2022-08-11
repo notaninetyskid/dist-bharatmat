@@ -1,0 +1,45 @@
+.heading {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 48px;
+  color: #34251f;
+  font-weight: 700;
+}
+label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 35px;
+}
+
+label + input,
+.inputFileUpload {
+  height: 50px;
+  background-color: #fcfcfc;
+}
+.location-link {
+  text-decoration: none;
+  color: #2b2a2a;
+  font-size: 18px;
+  font-weight: 600;
+}
+button {
+  background-color: #34251f;
+  font-weight: 900;
+  font-size: 18px;
+  color: white;
+  line-height: 32px;
+
+  height: 63px;
+  width: 180px;
+  left: 630px;
+  top: 1745px;
+  border: none;
+  border-radius: 2px;
+  padding: 20px;
+}
+button:hover {
+  opacity: 0.8;
+}
+button:active {
+  background-color: rgb(0, 0, 0);
+}

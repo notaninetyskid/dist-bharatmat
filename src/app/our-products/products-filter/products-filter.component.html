@@ -1,0 +1,63 @@
+<div class="row justify-content-start">
+  <div class="col-12 heading mb-4">
+    Categories
+  </div>
+  <div class="col-12 col-md-5 col-lg-5 text-end ms-3">
+    <form>
+      <label class="container">category 1
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">category 1
+        <input type="checkbox" name="categoryThree">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">category 1
+        <input type="checkbox" name="categoryTwo">
+        <span class="checkmark"></span>
+      </label>
+    </form>
+  </div>
+  <div class="row justify-content-center mt-5">
+    <div class="col-7">
+      <div class="heading">
+        Price Range
+      </div>
+    </div>
+    <div class="col-5 rangeSelected">&#8377;{{ minValuePr }} - &#8377;{{ maxValuePr }}</div>
+  </div>
+  <div class="col-7 mt-4">
+    <div class="slider">
+      <div class="progress" #progressBarStylePriceRange></div>
+    </div>
+    <div class="range-input">
+      <input type="range" class="range-min" min="100" max="5000" step="1" value="500" #minSlidePr
+        (input)="ChangingWidthOfLeftPriceRange($event)">
+      <input type="range" class="range-max" min="100" max="5000" step="1" value="1500" #maxSlidePr
+        (input)="onChangingWidthOfRightPriceRange($event)">
+    </div>
+
+  </div>
+  <div class="row justify-content-center mt-5">
+    <div class="col-7">
+      <div class="heading">
+        Price Range
+      </div>
+    </div>
+    <div class="col-5 rangeSelected">{{ minValueDiscount + '%'}} - {{ maxValueDiscount + '%'}}</div>
+  </div>
+  <div class="col-7 mt-4">
+    <div class="slider">
+      <div class="progress" #progressBarStyleDiscount></div>
+    </div>
+    <div class="range-input">
+      <input type="range" class="range-min" max="100" step="1" value="10" #minSlideDiscount
+        (input)="ChangingWidthOfLeftDiscount($event)">
+      <input type="range" class="range-max"  max="100" step="1" value="40" #maxSlideDiscount
+        (input)="ChangingWidthOfRightDiscount($event)">
+    </div>
+  </div>
+  <div class="col-12 text-center mt-4">
+    <button>Apply</button>
+  </div>
+</div>

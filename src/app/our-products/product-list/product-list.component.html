@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-12 heading mb-4 d-none d-md-block">
+    RESULTS
+  </div>
+  <div class="col-12 col-md-4" *ngFor="let product of products">
+    <div class="mb-3 border rounded border-dark border-opacity-25">
+      <div class="row">
+        <div class="col-5 col-md-12">
+          <img height="100%" width="100%" [src]="product.image" alt="">
+        </div>
+        <div class="col-6 col-md-12 mb-4">
+          <div class="row justify-content-between">
+            <div class="col-12 text-center productName mt-3 mt-md-1 mb-md-3">
+              {{product.productName}}
+            </div>
+            <div class="col-4 col-md-6 text-center productPrice">
+              <sup>&#8377;</sup>{{product.price}}
+            </div>
+            <div class="col-8 col-md-6 d-flex align-items-center" *ngIf="product.priceWithOutDiscount">
+              <div class="fullPrice">
+                {{product.priceWithOutDiscount}}
+              </div>
+              <div class="discount ms-2" style="text-decoration: none;">
+                ({{product.discount + '%Off'}})
+              </div>
+            </div>
+            <div class="col-6 fixedPrice d-flex align-items-center" *ngIf="!product.priceWithOutDiscount">Fixed price
+            </div>
+            <div class="productDesc col-12 text-center">
+              {{product.desc}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,127 @@
+<div class="container">
+  <ul class="nav_bar">
+    <li class="text-center">
+      <a class="navbar-brand " href="#">
+        <img src="../../assets/images/header_images/logo.png" alt="">
+      </a>
+    </li>
+    <li>
+      <a class="nav-link nav-head" href="#">Bharat Mats</a>
+    </li>
+    <li class="shop_cart">
+
+      <button type="button" class="btn btn-primary position-relative shop-btn" id="cd-cart-trigger">
+        <a class="cd-img-replace" href="#0">
+          <img src="../../assets/images/header_images/shopping_cart.png" alt="" class="cd-img-replace" href="#0">
+          <span class="position-absolute top_0 translate-middle badge rounded-pill bg-danger">
+            9+
+            <span class="visually-hidden">unread messages</span>
+          </span>
+        </a>
+      </button>
+    </li>
+    <li>
+      <button type="button" class="nav-link login-btn" data-bs-toggle="modal" data-bs-target="#exampleModalOne">
+        LOGIN
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalOne" tabindex="-1" aria-labelledby="exampleModalLabelOne"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="row modal-header">
+              <div class="col-12">
+                <h5 class="modal-title log-header text-center" id="exampleModalLabelOne">Login</h5>
+              </div>
+            </div>
+            <div class="modal-body log-body">
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Email/Mobile</label>
+                <input type="text" class="form-control form_input" id="formGroupExampleInput" placeholder="">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Password</label>
+                <input type="text" class="form-control form_input" id="formGroupExampleInput2" placeholder="password">
+              </div>
+              <a href="" style="text-decoration: none;color:#000; font-size:14px;">Forgot
+                Password?</a>
+              <div class="mb-3 sign-part">
+                <button class="sign-btn">Sign In</button>
+                <p>Or</p>
+                <a href="">Login with OTP</a>
+              </div>
+            </div>
+            <div class="modal-footer log-footer">
+              <span>Don't have an account yet? <a href="">Register Now</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+
+
+
+  <div id="cd-shadow-layer"></div>
+  <div id="cd-cart">
+    <div class="container cart_dropdown">
+      <div class="cart-heading">
+        <h1>Cart</h1>
+      </div>
+      <div class="products-box">
+        <div class="row">
+          <div class="col-sm-3">
+            <img src="../../assets/images/header_images/Rectangle 423.png" alt="">
+          </div>
+          <div class="col-sm-6">
+            <b>Product Name</b>
+            <p>Lorem ipsum</p>
+
+            <div class="input-group">
+              <div class="input-group-btn">
+                <button id="down" class="btn btn-default" (click)="decrease()"><span
+                    class="glyphicon glyphicon-minus">-</span></button>
+              </div>
+              <input id="myNumber" value="1" #quantityOfProduct class="form-control input-number">
+              <div class="input-group-btn">
+                <button id="up" class="btn btn-default" (click)="increase()"><span
+                    class="glyphicon glyphicon-plus">+</span></button>
+              </div>
+            </div>
+            <span>x 123.20</span>
+          </div>
+          <div class="col-sm-3 dlt-part">
+            <a href="">
+              <img src="../../assets/images/header_images/Rectangle 217.png" alt="">
+            </a>
+            <p>₹ 1,200</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grey-box">
+      <p>Subtotal: ₹11200 </p>
+      <p>Discount: -₹1100</p>
+      <p style="margin-bottom: 0;padding-bottom:6px;">Delivery Charges: +₹1200</p>
+    </div>
+    <div class="dark-box">
+      <p style="margin-bottom: 0;">PROCEED TO PAY</p>
+      <span>Total : ₹12000</span>
+    </div>
+  </div> <!-- cd-cart -->
+</div>
+
+
+<div class="flag-part">
+  <div class="orange">
+
+  </div>
+  <div class="white">
+    <img src="../../assets/images/header_images/flag-of-india 1.png" alt="">
+  </div>
+  <div class="green">
+
+  </div>
+</div>

@@ -1,0 +1,63 @@
+
+
+.third-img-part .img-1 .cow-img {
+  width: 70%;
+}
+
+.third-img-part .img-1 .vector-2 {
+  top: -10%;
+}
+
+.third-img-part .img-1 .vector-3 {
+  z-index: -1;
+  top: 115%;
+}
+
+@media (max-width: 990px) {
+  .third-content-part {
+    text-align: center;
+    padding-top: 65px;
+  }
+}
+.text-h1 {
+  font-weight: 700;
+  font-size: 59px;
+  margin-bottom: 30px;
+  color: #34251f;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .text-h1 {
+    font-size: 39px;
+    margin-bottom: 10px;
+  }
+}
+.bhrt-btn {
+  background: #34251f;
+  border-radius: 2px;
+  width: 141px;
+  border: none;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  display: inline;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+@media (max-width: 760px) {
+  .bhrt-btn {
+    width: 100px;
+    font-size: 14px;
+    height: 35px;
+  }
+}
+
+.bhrt-btn:hover {
+  box-shadow: none;
+  transition: 0.5s;
+}

@@ -1,0 +1,157 @@
+
+/* First section */
+.first-section {
+  height: auto;
+  background: #d0f3ff;
+  position: relative;
+}
+
+.square img {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  transform: translate(-100%, 0);
+  width: fit-content;
+}
+
+.rectangle img {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  transform: translate(0, -100%);
+  width: fit-content;
+}
+
+@media (max-width: 990px) {
+  .square img,
+  .rectangle img {
+    width: 40%;
+  }
+
+  .first-img-part {
+    margin-top: 50px;
+  }
+}
+
+.vector-1 img {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  transform: translate(0, -10%);
+}
+
+.text-p {
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  color: #34251f;
+}
+
+@media (max-width: 760px) {
+  .text-p {
+    font-size: 18px;
+  }
+}
+
+.text-h1 {
+  font-weight: 700;
+  font-size: 59px;
+  margin-bottom: 30px;
+  color: #34251f;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .text-h1 {
+    font-size: 39px;
+    margin-bottom: 10px;
+  }
+}
+
+.first-ro {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.img-1 {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+
+.cow-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+.bg-img {
+  width: 70%;
+}
+
+.vector-3 {
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  transform: translate(-10%, -100%);
+}
+
+.vector-2 {
+  position: absolute;
+  top: 15%;
+  left: 76%;
+  transform: translate(-13%, 0);
+}
+
+@media (max-width: 760px) {
+  .vector-1 img,
+  .vector-2,
+  .vector-3 {
+    width: 20%;
+  }
+}
+
+.first-content-part {
+  position: relative;
+}
+
+@media (max-width: 990px) {
+  .first-content-part {
+    text-align: center;
+  }
+
+  .first-ro {
+    padding-top: 30px;
+  }
+}
+.bhrt-btn {
+  background: #34251f;
+  border-radius: 2px;
+  width: 141px;
+  border: none;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  display: inline;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+@media (max-width: 760px) {
+  .bhrt-btn {
+    width: 100px;
+    font-size: 14px;
+    height: 35px;
+  }
+}
+
+.bhrt-btn:hover {
+  box-shadow: none;
+  transition: 0.5s;
+}

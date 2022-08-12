@@ -1,0 +1,148 @@
+
+/* fourth section */
+.fourth-section {
+  padding-bottom: 300px;
+  background-image: url(../../assets/images/home_images/Rectangle_416.png);
+  height: auto;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fourth-ro .col-lg-12 {
+  /* position: relative; */
+  justify-content: end;
+  display: flex;
+}
+
+.white-box {
+  /* height: 100px; */
+  background: #fff;
+  box-shadow: 1px 2px 6px grey;
+  width: 50%;
+  /* position: absolute;
+  left: 85%;
+  transform: translate(-95%,0);
+  top: -30px; */
+}
+
+.white-ro {
+  height: 100px;
+  padding: 20px 10px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.white-ro h1 {
+  border-right: 1px solid #000;
+  font-weight: 600;
+}
+
+.white-ro p {
+  font-weight: 600;
+}
+
+@media (max-width: 990px) {
+  .white-co {
+    width: 33%;
+  }
+
+  .white-box {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+
+  .white-ro {
+    height: 72px;
+    width: 100%;
+  }
+
+  .white-ro h1 {
+    font-size: 20px;
+  }
+
+  .white-ro p {
+    font-size: 14px;
+  }
+}
+
+/* Fifth section */
+.fifth-section {
+  padding-top: 150px;
+}
+
+@media (max-width: 820px) {
+  .fifth-section {
+    text-align: center;
+    padding-top: 0;
+    margin-top: -50px;
+  }
+
+  .fifth-img-part {
+    padding-top: 30px;
+  }
+}
+
+.bg-img-2 {
+  padding: 30px;
+}
+
+.fifth-content-part {
+  padding-top: 150px;
+}
+
+@media (max-width: 760px) {
+  .bg-img-2 {
+    padding: 20px;
+  }
+}
+
+.fifth-img-part .img-1 .vector-2 {
+  position: absolute;
+  top: 0;
+  left: 70%;
+  transform: translate(-13%, 0);
+}
+.text-h1 {
+  font-weight: 700;
+  font-size: 59px;
+  margin-bottom: 30px;
+  color: #34251f;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .text-h1 {
+    font-size: 39px;
+    margin-bottom: 10px;
+  }
+}
+.bhrt-btn {
+  background: #34251f;
+  border-radius: 2px;
+  width: 141px;
+  border: none;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  display: inline;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+@media (max-width: 760px) {
+  .bhrt-btn {
+    width: 100px;
+    font-size: 14px;
+    height: 35px;
+  }
+}
+
+.bhrt-btn:hover {
+  box-shadow: none;
+  transition: 0.5s;
+}

@@ -3,7 +3,7 @@
     RESULTS
   </div>
   <div class="col-12 col-md-4" *ngFor="let product of products">
-    <div class="mb-3 border rounded border-dark border-opacity-25">
+    <div class="mb-3 border rounded border-dark border-opacity-25" routerLink="/product-page">
       <div class="row">
         <div class="col-5 col-md-12">
           <img height="100%" width="100%" [src]="product.image" alt="">

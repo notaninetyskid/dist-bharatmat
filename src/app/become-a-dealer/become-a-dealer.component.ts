@@ -24,7 +24,10 @@ export class BecomeADealerComponent implements OnInit {
 
 
   ngOnInit() {
-
+    this.DealerForm.get('aadharCardCopy').disable();
+    this.DealerForm.get('shopPhoto').disable();
+    this.DealerForm.get('gstInCopy').disable();
+    this.DealerForm.get('panCardNumberAndCopy').disable();
   }
 
   onSubmit() {

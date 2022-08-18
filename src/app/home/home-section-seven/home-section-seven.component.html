@@ -1,11 +1,27 @@
-
 <!-- Seventh section starts -->
 <div class="seventh-section">
-  <div class="container seventh-co">
-    <div class="row seventh-ro">
-      <h1 class="text-h1">How Our Products Work</h1>
-    <div class="col-12">
-
+  <div class="container-fluid seventh-co">
+    <h1 class="text-h1">How Our Products Work</h1>
+    <div class="row">
+      <div class="col-1">
+        <button type="button" class="prev ms-4" (click)="prev()">&#60;</button>
+      </div>
+      <div class="sliderWrap col-10 text-center">
+        <div class="slidesMain" id='slidesMain'>
+          <div class="slideItem" *ngFor="let slide of slideShowSides">
+            <img src="{{ slide.image }}" alt="">
+            <div class="">
+              {{ slide.title }}
+            </div>
+            <div>
+              {{ slide.description }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+        <button type="button" class="next me-4" (click)="next()">></button>
+      </div>
     </div>
   </div>
 </div>

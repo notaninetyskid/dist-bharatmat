@@ -19,16 +19,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OurProductsComponent } from './our-products/our-products.component';
 import { ProductsFilterComponent } from './our-products/products-filter/products-filter.component';
 import { ProductListComponent } from './our-products/product-list/product-list.component';
-import { HomeSectionOneComponent } from './home/home-section-one/home-section-one.component';
-import { HomeSectionTwoComponent } from './home/home-section-two/home-section-two.component';
-import { HomeSectionThreeComponent } from './home/home-section-three/home-section-three.component';
-
-import { HomeSectionSixComponent } from './home/home-section-six/home-section-six.component';
+import { ProductPageComponent } from './our-products/product-list/product-page/product-page.component';
 import { HomeSectionSevenComponent } from './home/home-section-seven/home-section-seven.component';
-import { HomeSectionEightComponent } from './home/home-section-eight/home-section-eight.component';
-import { HomeSectionNineComponent } from './home/home-section-nine/home-section-nine.component';
-import { HomeSectionTenComponent } from './home/home-section-ten/home-section-ten.component';
-import { HomeSectionFourAndFiveComponent } from './home/home-section-four-and-five/home-section-four-and-five.component';
+
 
 @NgModule({
   declarations: [
@@ -48,21 +41,16 @@ import { HomeSectionFourAndFiveComponent } from './home/home-section-four-and-fi
     OurProductsComponent,
     ProductsFilterComponent,
     ProductListComponent,
-    HomeSectionOneComponent,
-    HomeSectionTwoComponent,
-    HomeSectionThreeComponent,
-    HomeSectionFourAndFiveComponent,
-    HomeSectionSixComponent,
-    HomeSectionSevenComponent,
-    HomeSectionEightComponent,
-    HomeSectionNineComponent,
-    HomeSectionTenComponent
+    ProductPageComponent,
+    HomeSectionSevenComponent
+
   ],
   imports: [
     BrowserModule,
     appRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

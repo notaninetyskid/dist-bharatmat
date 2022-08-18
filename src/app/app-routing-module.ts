@@ -7,6 +7,7 @@ import { DisclaimerComponent } from "./disclaimer/disclaimer.component";
 import { FAQComponent } from "./faq/faq.component";
 import { HomeComponent } from "./home/home.component";
 import { OurProductsComponent } from "./our-products/our-products.component";
+import { ProductPageComponent } from "./our-products/product-list/product-page/product-page.component";
 import { PrivacyPolicyComponent } from "./privacy-policy/privacy-policy.component";
 import { ReturnRefundAndCancellationPolicyComponent } from "./return-refund-and-cancellation-policy/return-refund-and-cancellation-policy.component";
 import { TermsOfServicesComponent } from "./terms-of-services/terms-of-services.component";
@@ -56,6 +57,10 @@ const routes: Routes = [
   {
     path: 'our-products',
     component: OurProductsComponent
+  },
+  {
+    path: 'product-page',
+    component: ProductPageComponent
   }
 ]
 

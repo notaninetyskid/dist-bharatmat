@@ -56,9 +56,10 @@ body.overflow-hidden {
 #cd-cart {
   position: fixed;
   top: 0;
-  height: 620px;
-  width: 100%;
-  margin-top: 75px;
+  height: 75%;
+  width: 200%;
+  margin: 75px 0px 0px 0px;
+  padding: 0;
   /* header height */
   /* padding-top: 50px; */
   overflow-y: auto;
@@ -366,13 +367,16 @@ body.overflow-hidden {
 .grey-box {
   background: #e9e9e9;
   text-align: right;
-  margin: 0;
-  margin-top: 40px;
   padding: 10px;
 }
 
 .grey-box p {
   margin-bottom: 6px;
+}
+
+.cartside {
+  position: fixed;
+  width: inherit;
 }
 
 .dark-box {
@@ -382,6 +386,7 @@ body.overflow-hidden {
   height: 50px;
   background-color: #34251F;
   color: #fff;
+  text-align: right;
   align-items: center;
   align-content: center;
   padding-top: 10px;
@@ -525,9 +530,10 @@ body.overflow-hidden {
 }
 
 
-
 .shop_cart {
-  margin-right: -150px;
+  /* margin-right: -150px; */
+  position: relative;
+  right: 45px;
 }
 
 @media (max-width:1024px) {
@@ -583,7 +589,7 @@ body.overflow-hidden {
   text-align: center;
   background-color: #fff;
 }
-
+/*
 .form_input {
   width: 400px;
   height: 40px;
@@ -602,7 +608,7 @@ body.overflow-hidden {
       font-size: 35px;
   }
 
-}
+} */
 
 .modal-title h5 {
   font-family: 'Frank Ruhl Libre', serif;
@@ -614,7 +620,7 @@ body.overflow-hidden {
 /* "Frank Ruhl Libre", serif */
 
 
-.log-body {
+/* .log-body {
   margin: auto;
 }
 
@@ -623,8 +629,8 @@ body.overflow-hidden {
       margin: 0%;
       padding: 0 20px;
   }
-}
-
+} */
+/*
 .sign-btn {
   width: 400px;
   background: #00A5DA;
@@ -646,7 +652,7 @@ body.overflow-hidden {
 .sign-btn:hover {
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
   transition: 0.5s;
-}
+} */
 
 .sign-part {
   text-align: center;
@@ -665,7 +671,7 @@ body.overflow-hidden {
 }
 
 
-.log-header {
+/* .log-header {
   justify-content: center;
   padding: 10px 50px;
 }
@@ -674,8 +680,8 @@ body.overflow-hidden {
   .log-header {
       padding: 10px 20px;
   }
-}
-
+} */
+/*
 .log-footer {
   height: 50px;
   align-items: center;
@@ -689,12 +695,15 @@ body.overflow-hidden {
   font-weight: 500;
   text-decoration: none;
   color: #fff;
-}
+} */
 
 .nav-head:hover {
   color: #000;
 }
 
+.cart_dropdown {
+  height: 100%;
+}
 /*
 .cart_dropdown {
   position: absolute;

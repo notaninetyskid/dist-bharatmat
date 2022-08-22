@@ -7,7 +7,7 @@
   font-weight: 700;
   font-size: 59px;
   margin-bottom: 30px;
-  color: #34251f;
+  color: #000000;
   text-align: center;
 }
 
@@ -27,11 +27,17 @@
 .slideItem {
   position: relative;
   display: inline-block;
-  width: 371px;
+  width: 360px;
   height: 333.25px;
   background-color: #c5f0ff;
-  transition: 2s;
-  transition: transform 0.5s;
+  transition: opacity .15s linear;
+}
+.centerOne {
+  position: relative;
+  display: inline-block;
+  width: 464px;
+  height: 468px;
+  background-color: #c5f0ff;
 }
 
 .slideItem > img {
@@ -39,43 +45,19 @@
 }
 
 
+.arrowButton{
+  font-size: 24px;
+  height: 58px;
+  width: 58px;
+  border: black;
+  border-radius: 100px;
+  background-color: #d0f3ff;
+  cursor: pointer;
+  opacity: 0.7;
+  box-shadow: 0px 1px rgb(114, 114, 114);
+}
 
-.prev{
-  position: absolute;
-  left: 0;
-  top: 50%;
-  font-size: 24px;
-  height: 58px;
-  width: 58px;
-  border: black;
-  border-radius: 100px;
-  background-color: #d0f3ff;
-  cursor: pointer;
-  opacity: 0.7;
-  box-shadow: 0px 1px rgb(114, 114, 114);
-  transition: 2s;
-}
-.next{
-  position: absolute;
-  right: 0;
-  top: 50%;
-  height: 58px;
-  width: 58px;
-  font-size: 24px;
-  border: black;
-  border-radius: 100px;
-  background-color: #d0f3ff;
-  cursor: pointer;
-  opacity: 0.7;
-  box-shadow: 0px 1px rgb(114, 114, 114);
-}
-.prev:active,
-.next:active{
+.arrowButton:active{
   box-shadow: 0px 0px rgb(126, 126, 126);
 }
 
-/* .centerOne {
-  width: 564px;
-  height: 468px;
-  z-index: 100;
-} */

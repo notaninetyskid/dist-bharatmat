@@ -21,6 +21,10 @@ import { ProductsFilterComponent } from './our-products/products-filter/products
 import { ProductListComponent } from './our-products/product-list/product-list.component';
 import { ProductPageComponent } from './our-products/product-list/product-page/product-page.component';
 import { HomeSectionSevenComponent } from './home/home-section-seven/home-section-seven.component';
+import { CartComponent } from './cart/cart.component';
+import { ShoppingCartComponent } from './cart/shopping-cart/shopping-cart.component';
+import { HomeSectionNineComponent } from './home/home-section-nine/home-section-nine.component';
+import { LogInComponent } from './header/log-in/log-in.component';
 
 
 @NgModule({
@@ -42,7 +46,11 @@ import { HomeSectionSevenComponent } from './home/home-section-seven/home-sectio
     ProductsFilterComponent,
     ProductListComponent,
     ProductPageComponent,
-    HomeSectionSevenComponent
+    HomeSectionSevenComponent,
+    CartComponent,
+    ShoppingCartComponent,
+    HomeSectionNineComponent,
+    LogInComponent
 
   ],
   imports: [

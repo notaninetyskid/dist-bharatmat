@@ -2,15 +2,17 @@
 <div class="seventh-section">
   <div class="container-fluid seventh-co">
     <h1 class="text-h1">How Our Products Work</h1>
-    <div class="row">
-      <div class="col-1">
-        <button type="button" class="prev ms-4" (click)="prev()">&#60;</button>
+    <div class="row d-flex align-items-center">
+      <div class="col-1" (click)="prev()">
+        <button type="button" class="arrowButton ms-4">&#60;</button>
       </div>
       <div class="sliderWrap col-10 text-center">
         <div class="slidesMain" id='slidesMain'>
-          <div class="slideItem" *ngFor="let slide of slideShowSides">
+
+          <div class="slideItem" *ngFor="let slide of slideShowSides; let i = index"
+          >
             <img src="{{ slide.image }}" alt="">
-            <div class="">
+            <div>
               {{ slide.title }}
             </div>
             <div>
@@ -19,8 +21,8 @@
           </div>
         </div>
       </div>
-      <div class="col-1">
-        <button type="button" class="next me-4" (click)="next()">></button>
+      <div class="col-1" (click)="next()">
+        <button type="button" class="arrowButton me-4">></button>
       </div>
     </div>
   </div>

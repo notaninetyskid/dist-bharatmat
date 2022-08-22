@@ -2,6 +2,8 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { AboutUsComponent } from "./about-us/about-us.component";
 import { BecomeADealerComponent } from "./become-a-dealer/become-a-dealer.component";
+import { CartComponent } from "./cart/cart.component";
+import { ShoppingCartComponent } from "./cart/shopping-cart/shopping-cart.component";
 import { ContactUsComponent } from "./contact-us/contact-us.component";
 import { DisclaimerComponent } from "./disclaimer/disclaimer.component";
 import { FAQComponent } from "./faq/faq.component";
@@ -28,7 +30,7 @@ const routes: Routes = [
   },
   {
     path: 'testimonials',
-    component : TestimonialsComponent
+    component: TestimonialsComponent
   },
   {
     path: 'become-a-dealer',
@@ -61,7 +63,17 @@ const routes: Routes = [
   {
     path: 'product-page',
     component: ProductPageComponent
+  },
+  {
+    path: 'cart-component',
+    component: CartComponent,
+  },
+  {
+    path: 'Shopping-cart',
+    component: ShoppingCartComponent
   }
+
+
 ]
 
 @NgModule({
@@ -69,4 +81,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 
-export class appRoutingModule {}
+export class appRoutingModule { }

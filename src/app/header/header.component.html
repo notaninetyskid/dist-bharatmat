@@ -8,8 +8,7 @@
     <li>
       <a class="nav-link nav-head" href="#">Bharat Mats</a>
     </li>
-    <li class="shop_cart">
-
+    <!-- <li class="shop_cart" style="display: flex;">
       <button type="button" class="btn btn-primary position-relative shop-btn" id="cd-cart-trigger">
         <a class="cd-img-replace" href="#0">
           <img src="../../assets/images/header_images/shopping_cart.png" alt="" class="cd-img-replace" href="#0">
@@ -19,14 +18,25 @@
           </span>
         </a>
       </button>
-    </li>
-    <li>
+    </li> -->
+    <li style="display:flex;">
+      <div class="shop_cart">
+        <button type="button" class="btn btn-primary position-relative shop-btn" id="cd-cart-trigger">
+          <a class="cd-img-replace" href="#0">
+            <img src="../../assets/images/header_images/shopping_cart.png" alt="" class="cd-img-replace" href="#0">
+            <span class="position-absolute top_0 translate-middle badge rounded-pill" style="background-color: #0BA9DE;">
+              9+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </a>
+        </button>
+      </div>
       <button type="button" class="nav-link login-btn" data-bs-toggle="modal" data-bs-target="#exampleModalOne">
         LOGIN
       </button>
 
       <!-- Modal -->
-      <div class="modal fade" id="exampleModalOne" tabindex="-1" aria-labelledby="exampleModalLabelOne"
+      <!-- <div class="modal fade" id="exampleModalOne" tabindex="-1" aria-labelledby="exampleModalLabelOne"
         aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -57,7 +67,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </li>
   </ul>
 
@@ -70,47 +80,171 @@
       <div class="cart-heading">
         <h1>Cart</h1>
       </div>
-      <div class="products-box">
-        <div class="row">
-          <div class="col-sm-3">
-            <img src="../../assets/images/header_images/Rectangle 423.png" alt="">
-          </div>
-          <div class="col-sm-6">
-            <b>Product Name</b>
-            <p>Lorem ipsum</p>
-
-            <div class="input-group">
-              <div class="input-group-btn">
-                <button id="down" class="btn btn-default" (click)="decrease()"><span
-                    class="glyphicon glyphicon-minus">-</span></button>
-              </div>
-              <input id="myNumber" value="1" #quantityOfProduct class="form-control input-number">
-              <div class="input-group-btn">
-                <button id="up" class="btn btn-default" (click)="increase()"><span
-                    class="glyphicon glyphicon-plus">+</span></button>
-              </div>
+      <div class="main-prod-div">
+        <div class="products-box">
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="../../assets/images/header_images/Rectangle 423.png" alt="">
             </div>
-            <span>x 123.20</span>
+            <div class="col-sm-6">
+              <b>Product Name</b>
+              <p>Lorem ipsum</p>
+
+              <div class="input-group">
+                <div class="input-group-btn">
+                  <button id="down" class="btn btn-default" (click)="decrease()"><span
+                      class="glyphicon glyphicon-minus">-</span></button>
+                </div>
+                <input id="myNumber" value="1" #quantityOfProduct class="form-control input-number">
+                <div class="input-group-btn">
+                  <button id="up" class="btn btn-default" (click)="increase()"><span
+                      class="glyphicon glyphicon-plus">+</span></button>
+                </div>
+              </div>
+              <span>x 123.20</span>
+            </div>
+            <div class="col-sm-3 dlt-part">
+              <a href="">
+                <img src="../../assets/images/header_images/Rectangle 217.png" alt="">
+              </a>
+              <p>₹ 1,200</p>
+            </div>
           </div>
-          <div class="col-sm-3 dlt-part">
-            <a href="">
-              <img src="../../assets/images/header_images/Rectangle 217.png" alt="">
-            </a>
-            <p>₹ 1,200</p>
+        </div>
+        <div class="products-box">
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="../../assets/images/header_images/Rectangle 423.png" alt="">
+            </div>
+            <div class="col-sm-6">
+              <b>Product Name</b>
+              <p>Lorem ipsum</p>
+
+              <div class="input-group">
+                <div class="input-group-btn">
+                  <button id="down" class="btn btn-default" (click)="decrease()"><span
+                      class="glyphicon glyphicon-minus">-</span></button>
+                </div>
+                <input id="myNumber" value="1" #quantityOfProduct class="form-control input-number">
+                <div class="input-group-btn">
+                  <button id="up" class="btn btn-default" (click)="increase()"><span
+                      class="glyphicon glyphicon-plus">+</span></button>
+                </div>
+              </div>
+              <span>x 123.20</span>
+            </div>
+            <div class="col-sm-3 dlt-part">
+              <a href="">
+                <img src="../../assets/images/header_images/Rectangle 217.png" alt="">
+              </a>
+              <p>₹ 1,200</p>
+            </div>
+          </div>
+        </div>
+        <div class="products-box">
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="../../assets/images/header_images/Rectangle 423.png" alt="">
+            </div>
+            <div class="col-sm-6">
+              <b>Product Name</b>
+              <p>Lorem ipsum</p>
+
+              <div class="input-group">
+                <div class="input-group-btn">
+                  <button id="down" class="btn btn-default" (click)="decrease()"><span
+                      class="glyphicon glyphicon-minus">-</span></button>
+                </div>
+                <input id="myNumber" value="1" #quantityOfProduct class="form-control input-number">
+                <div class="input-group-btn">
+                  <button id="up" class="btn btn-default" (click)="increase()"><span
+                      class="glyphicon glyphicon-plus">+</span></button>
+                </div>
+              </div>
+              <span>x 123.20</span>
+            </div>
+            <div class="col-sm-3 dlt-part">
+              <a href="">
+                <img src="../../assets/images/header_images/Rectangle 217.png" alt="">
+              </a>
+              <p>₹ 1,200</p>
+            </div>
+          </div>
+        </div>
+        <div class="products-box">
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="../../assets/images/header_images/Rectangle 423.png" alt="">
+            </div>
+            <div class="col-sm-6">
+              <b>Product Name</b>
+              <p>Lorem ipsum</p>
+
+              <div class="input-group">
+                <div class="input-group-btn">
+                  <button id="down" class="btn btn-default" (click)="decrease()"><span
+                      class="glyphicon glyphicon-minus">-</span></button>
+                </div>
+                <input id="myNumber" value="1" #quantityOfProduct class="form-control input-number">
+                <div class="input-group-btn">
+                  <button id="up" class="btn btn-default" (click)="increase()"><span
+                      class="glyphicon glyphicon-plus">+</span></button>
+                </div>
+              </div>
+              <span>x 123.20</span>
+            </div>
+            <div class="col-sm-3 dlt-part">
+              <a href="">
+                <img src="../../assets/images/header_images/Rectangle 217.png" alt="">
+              </a>
+              <p>₹ 1,200</p>
+            </div>
+          </div>
+        </div>
+        <div class="products-box">
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="../../assets/images/header_images/Rectangle 423.png" alt="">
+            </div>
+            <div class="col-sm-6">
+              <b>Product Name</b>
+              <p>Lorem ipsum</p>
+
+              <div class="input-group">
+                <div class="input-group-btn">
+                  <button id="down" class="btn btn-default" (click)="decrease()"><span
+                      class="glyphicon glyphicon-minus">-</span></button>
+                </div>
+                <input id="myNumber" value="1" #quantityOfProduct class="form-control input-number">
+                <div class="input-group-btn">
+                  <button id="up" class="btn btn-default" (click)="increase()"><span
+                      class="glyphicon glyphicon-plus">+</span></button>
+                </div>
+              </div>
+              <span>x 123.20</span>
+            </div>
+            <div class="col-sm-3 dlt-part">
+              <a href="">
+                <img src="../../assets/images/header_images/Rectangle 217.png" alt="">
+              </a>
+              <p>₹ 1,200</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="grey-box">
-      <p>Subtotal: ₹11200 </p>
-      <p>Discount: -₹1100</p>
-      <p style="margin-bottom: 0;padding-bottom:6px;">Delivery Charges: +₹1200</p>
-    </div>
-    <div class="dark-box">
-      <p style="margin-bottom: 0;">PROCEED TO PAY</p>
-      <span>Total : ₹12000</span>
-    </div>
-  </div> <!-- cd-cart -->
+    <div class="cartside" style="padding: 0;">
+      <div class="grey-box">
+        <p>Subtotal: ₹11200 </p>
+        <p>Discount: -₹1100</p>
+        <p style="margin-bottom: 0;padding-bottom:6px;">Delivery Charges: +₹1200</p>
+      </div>
+      <div class="dark-box" data-bs-dismiss="modal" style="cursor: pointer;" (click)="NavToCartPage()">
+        <p style="margin-bottom: 0;">PROCEED TO PAY</p>
+        <span style="margin-bottom: 0;">Total : ₹12000</span>
+      </div>
+    </div> <!-- cd-cart -->
+  </div>
 </div>
 
 

@@ -1,0 +1,17 @@
+<div class="ninth-section">
+  <div class="container-fluid nine-co">
+    <div class="nine ro">
+      <h1 class="text-h1">What People Say About Us</h1>
+      <p class="text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="review-container" *ngFor="let review of reviews">
+        <div class="review">
+          {{ review.review }}
+          <img class="review-holder-image" src="{{ review.image }}" alt="">
+        </div>
+        <div class="review-holder">
+          {{ review.name }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,112 @@
+<!-- cart section starts -->
+<div class="cart-section">
+  <div class="container cart-co">
+    <div class="row cart-ro">
+      <h1 class="text-h1">Your Cart</h1>
+      <div class="col-lg-8">
+        <div class="cart-products">
+          <div class="cart-products-box">
+            <div class="row">
+              <div class="col-lg-4 cart-prod-img-part">
+                <img src="../../assets/images/cart Images/Rectangle 61.png" alt="">
+              </div>
+              <div class="col-lg-8">
+                <div class="cart-prod-content-part">
+                  <h5><b>Bharat Cat Mat</b></h5>
+                  <div class="pos-absolute">
+                    <p class="text-p">Price</p>
+                    <b>₹1345</b>
+                  </div>
+                  <div class="input-group shadow-sm rounded">
+                    <div class="input-group-btn">
+                      <button id="down" class="btn btn-default" (click)="decreaseValue()"><span
+                          class="glyphicon glyphicon-minus">-</span></button>
+                    </div>
+                    <input type="text" id="myNumber1" #quantity class="form-control input-number" value="1"/>
+                    <div class="input-group-btn">
+                      <button id="up" class="btn btn-default" (click)="increaseValue()"><span
+                          class="glyphicon glyphicon-plus">+</span></button>
+                    </div>
+                  </div>
+                  <span>
+                    <a href="">
+                      <img src="../../assets/images/cart Images/Rectangle 217.png" alt="">
+                    </a>
+                  </span>
+                  <hr>
+                  <p class="text-p">Subtotal (7 items): <b>₹35700</b> </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="summary-part">
+          <h2>Order Summary</h2>
+          <!-- Button trigger modal -->
+          <button type="button" class="ac-btn" data-bs-toggle="modal" data-bs-target="#exampleModalac">
+            Apply Coupon
+            <p>></p>
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalac" tabindex="-1" aria-labelledby="exampleModalLabelac"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content mc">
+                <div class="modal-header mh">
+                  <h5 class="modal-title" id="exampleModalLabelac">Available Coupons</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body mb">
+                  <div class="freetoday-box">
+                    <div>
+                      <span class="free">FREETODAY</span>
+                      <a href="">APPLY</a>
+                    </div>
+                    <p class="p-lg">Apply Code FREETODAY to Avail Huge Discounts</p>
+                    <p class="p-sm">Upto to 50% off & Free shipping</p>
+                  </div>
+                </div>
+                <div class="modal-footer mf">
+                  <!-- <button type="button" class="btn btn-secondary"
+                                          data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-ac">
+            <div class="ac-btn2">
+              <div class="first-os">
+                <p>Cart Value</p>
+                <p class="green-p">Retail Discount</p>
+                <p class="blue-p">Cashback/Refund Credits</p>
+                <p>Delivery & Assembly Charges Extra.
+                  Enter Pincode To Know
+                </p>
+              </div>
+              <div class="second-os">
+                <p>₹46,990</p>
+                <p class="green-p">₹46,990</p>
+                <p class="blue-p">₹46,990</p>
+              </div>
+            </div>
+            <hr>
+            <div class="third-os">
+              <p>Total Cost</p>
+              <div>
+                <b>₹3800.00</b>
+                <p>( Inclusive of all taxes )</p>
+              </div>
+            </div>
+          <button class="bhrt-btn mt-4 mb-3" (click)="goToShoppingCart()">PROCEED TO BUY</button>
+          </div>
+          <!-- <button class="bhrt-btn" (click)="goToShoppingCart()">PROCEED TO BUY</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- cart section ends -->

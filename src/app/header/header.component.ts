@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,17 +8,16 @@ import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/co
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private renderer: Renderer2) { }
+  constructor(private renderer: Renderer2, private router: Router, private activatedRoute: ActivatedRoute) { }
 
   @ViewChild('quantityOfProduct') quantityOfProduct: ElementRef;
 
 
   ngOnInit() {
-
-
     const javaScriptForHeadAndFoot = this.renderer.createElement('script');
     javaScriptForHeadAndFoot.src = `../../assets/javaScripts/headerAndFooter.js`;
     this.renderer.appendChild(document.head, javaScriptForHeadAndFoot);
+// stylesheets
 
   }
 
@@ -29,5 +29,9 @@ export class HeaderComponent implements OnInit {
     if(this.quantityOfProduct.nativeElement.value < 0 ){
       this.quantityOfProduct.nativeElement.value = 0;
     };
+  }
+
+  NavToCartPage() {
+    this.router.navigate(['/cart-component'],{relativeTo: this.activatedRoute})
   }
 }

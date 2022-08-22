@@ -7,6 +7,7 @@ import { ShoppingCartComponent } from "./cart/shopping-cart/shopping-cart.compon
 import { ContactUsComponent } from "./contact-us/contact-us.component";
 import { DisclaimerComponent } from "./disclaimer/disclaimer.component";
 import { FAQComponent } from "./faq/faq.component";
+import { LogInComponent } from "./header/log-in/log-in.component";
 import { HomeComponent } from "./home/home.component";
 import { OurProductsComponent } from "./our-products/our-products.component";
 import { ProductPageComponent } from "./our-products/product-list/product-page/product-page.component";
@@ -71,6 +72,10 @@ const routes: Routes = [
   {
     path: 'Shopping-cart',
     component: ShoppingCartComponent
+  },
+  {
+    path: 'logIn-modal',
+    component: LogInComponent
   }
 
 

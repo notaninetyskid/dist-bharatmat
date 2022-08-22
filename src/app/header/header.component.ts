@@ -1,5 +1,13 @@
-import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
+import {
+   Component,
+   ComponentFactoryResolver,
+   ElementRef,
+   OnInit,
+   Renderer2,
+   ViewChild
+   } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { LogInComponent } from './log-in/log-in.component';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +16,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private renderer: Renderer2, private router: Router, private activatedRoute: ActivatedRoute) { }
+  constructor(private renderer: Renderer2, private router: Router, private activatedRoute: ActivatedRoute, private componentFactoryResolver: ComponentFactoryResolver) { }
 
   @ViewChild('quantityOfProduct') quantityOfProduct: ElementRef;
 
@@ -33,5 +41,12 @@ export class HeaderComponent implements OnInit {
 
   NavToCartPage() {
     this.router.navigate(['/cart-component'],{relativeTo: this.activatedRoute})
+  }
+
+  openLogInModal() {
+    // const LogInModal = this.componentFactoryResolver.resolveComponentFactory(
+    //   LogInComponent
+    // );
+    this.router.navigate(['/logIn-modal'], {relativeTo: this.activatedRoute});
   }
 }
